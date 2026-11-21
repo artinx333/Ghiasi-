@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>قیاسی | حرف بزنیم؟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="logo">ق</div>
+      <div class="brand"><h1>قیاسی</h1><p>اینجا جواب هست، تعارف نداریم! 😏</p></div>
+      <span class="online"><i></i> آماده‌ام</span>
+    </header>
+
+    <section class="hero">
+      <div class="bubble" id="bubble">سلام! بالاخره یکی پیدا شد با من حرف بزنه! 😂</div>
+      <div class="mascot" aria-label="شخصیت کارتونی زرد با عینک">
+        <svg viewBox="0 0 240 260" role="img">
+          <ellipse cx="120" cy="246" rx="67" ry="9" fill="#000" opacity=".22"/>
+          <path d="M65 72Q65 18 120 18Q175 18 175 72L184 190Q184 225 150 231H90Q56 225 56 190Z" fill="#ffd83d" stroke="#d6a900" stroke-width="4"/>
+          <path d="M58 157Q120 174 182 157L179 202Q174 225 150 231H90Q66 225 61 202Z" fill="#2672c9"/>
+          <path d="M58 168L95 178V230H83L58 204ZM182 168L145 178V230H157L182 204Z" fill="#195da9"/>
+          <path d="M96 178H145L151 218H90Z" fill="#3688df"/>
+          <rect x="77" y="70" width="86" height="59" rx="27" fill="#e5e7eb" stroke="#555" stroke-width="8"/>
+          <circle cx="120" cy="100" r="25" fill="white" stroke="#777" stroke-width="3"/>
+          <circle cx="120" cy="101" r="11" fill="#8b5e3c"/><circle cx="124" cy="101" r="6" fill="#20242c"/><circle cx="127" cy="96" r="3" fill="white"/>
+          <path d="M102 143Q120 158 139 142" fill="none" stroke="#603b20" stroke-width="5" stroke-linecap="round"/>
+          <path d="M57 180Q34 185 30 205M183 180Q207 185 211 205" fill="none" stroke="#d6a900" stroke-width="8" stroke-linecap="round"/>
+          <path d="M92 228L87 243M148 228L153 243" stroke="#333" stroke-width="9" stroke-linecap="round"/>
+          <path d="M75 243Q90 235 104 245L105 253H70ZM136 245Q151 235 166 243L171 253H135Z" fill="#222"/>
+          <path d="M90 17Q85 2 99 8M120 16Q116 0 130 5M148 19Q151 5 163 12" fill="none" stroke="#333" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2>خب، چی تو ذهنته؟</h2>
+      <p>بنویس یا با میکروفون بگو؛ من گوشم با توئه! 🎙️</p>
+    </section>
+
+    <section class="chat" aria-live="polite">
+      <div id="messages" class="messages">
+        <div class="msg bot">من قیاسی‌ام! سؤال بپرس، درد دل کن، یا فقط بیا ببینیم امروز کی قراره سوژه بشه! 😄</div>
+      </div>
+    </section>
+
+    <form id="chatForm" class="composer">
+      <button type="button" id="micBtn" class="mic" title="صحبت با میکروفون" aria-label="میکروفون">🎙️</button>
+      <input id="userInput" type="text" maxlength="500" autocomplete="off" placeholder="اینجا بنویس..." aria-label="پیام شما">
+      <button type="submit" class="send" aria-label="ارسال">➤</button>
+    </form>
+    <div class="under"><span id="status">برای صحبت، اجازه میکروفون را فعال کن.</span><button id="voiceToggle" type="button">🔊 صدا روشن</button></div>
+    <footer>قیاسی <span>•</span> یه کم شوخی، کلی حرف 😎</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
